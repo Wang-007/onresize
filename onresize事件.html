@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript" src="my.js"></script>
+<script type="text/javascript">
+	function reSize() {
+		var clientWidth = client().width;
+		if (clientWidth >= 960)
+		{
+			document.body.style.backgroundColor = 'red';
+		}
+		else if (clientWidth >= 640)
+		{
+			document.body.style.backgroundColor = 'green';
+		}
+		else
+		{
+			document.body.style.backgroundColor = 'blue';
+		}
+	}
+	reSize();
+	window.onresize = reSize;
+</script>
